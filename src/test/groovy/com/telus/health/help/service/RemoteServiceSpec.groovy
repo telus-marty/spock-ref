@@ -12,6 +12,10 @@ class RemoteServiceSpec extends Specification {
 
   def newTest()
   {
+    given:
+    when:
     service.executeRemoteAction( "data" )
+    then:
+    noExceptionThrown()
   }
 }
