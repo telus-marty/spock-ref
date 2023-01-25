@@ -5,5 +5,9 @@ import com.telus.health.help.SpockRefApplication
 import spock.lang.Specification
 
 @SpringBootTest(classes = SpockRefApplication.class, webEnvironment =  SpringBootTest.WebEnvironment.MOCK)
-class RemoteServiceSpec extends Specification{
+class RemoteServiceSpec extends Specification {
+  def newTest()
+  {
+
+  }
 }
