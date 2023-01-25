@@ -8,6 +8,7 @@ import spock.lang.Specification
 @SpringBootTest(classes = SpockRefApplication.class, webEnvironment =  SpringBootTest.WebEnvironment.MOCK)
 class RemoteServiceSpec extends Specification {
 
+  // Mock means we simply get an "empty" class
   def service = Mock(RemoteService)
 
   def newTest()
@@ -15,7 +16,7 @@ class RemoteServiceSpec extends Specification {
     given:
     when:
     service.executeRemoteAction( "data" )
-    then:
+    then: "We get no errors"
     noExceptionThrown()
   }
 }
